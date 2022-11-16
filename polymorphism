@@ -1,0 +1,29 @@
+public class Animal {
+	public void makesound()
+	{
+		System.out.println("animal sound");
+	}
+ }
+  public class cat extends Animal{
+		public void makesound()
+		{
+			System.out.println("Meow");
+		}
+	}
+  public class dog extends Animal{
+	public void makesound()
+	{
+		System.out.println("Woof");
+	}
+}
+public class polymorphism {
+	public static void main(String[]args)
+	{
+	Animal a=new cat();
+	Animal b=new dog();
+	
+	a.makesound();
+	b.makesound();
+	
+	}
+}
